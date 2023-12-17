@@ -1,0 +1,61 @@
+
+  
+  <p>
+    <mat-toolbar color="primary">
+      <mat-toolbar-row class="mat-elevation-z8">
+        <button routerLink="" mat-button>
+            <mat-icon>home</mat-icon>
+        </button>
+        <span>Grand Jury Tracking System</span>
+        <span class="header-spacer"></span>
+        <button mat-button>Help:</button>
+        <button mat-button>Signin</button>
+      </mat-toolbar-row>
+  
+      <mat-toolbar-row >
+       <button routerLink="" mat-button>Home</button>
+       <button routerLink="grand-jury-case" mat-button>Grand Jury Case</button>
+       <button routerLink="grand-jury-case-calander" mat-button>Grand Jry Case Calander</button>
+       <!-- <button routerLink="reports" mat-button>Reports</button> -->
+      
+       <button [matMenuTriggerFor]="lvl1reports" mat-button>Reports</button>
+      
+       <mat-menu #lvl1reports="matMenu">
+        
+          <button routerLink="non-financial-record" mat-menu-item>Non-Financial Records Received</button>
+          <mat-divider></mat-divider>
+          <button mat-menu-item>Subpoenas per Defendant</button>
+          <mat-divider></mat-divider>
+          <button mat-menu-item>Grand Jury Case without Case Number</button>
+       </mat-menu>
+       <button routerLink="reference-data-manager" mat-button>Reference Data Manager</button>
+       <button routerLink="user-manager" mat-button>User Manager</button>
+      
+       <!-- <mat-form-field>
+        <mat-label>Favorite food</mat-label>
+        <mat-select>
+          @for (food of foods; track food) {
+            <mat-option [value]="food.value">{{food.viewValue}}</mat-option>
+          }
+        </mat-select>
+      </mat-form-field> -->
+      <span class="field-spacer"></span>
+      <mat-form-field>
+     
+        <mat-select [(value)]="selected">
+          <mat-option>None</mat-option>
+          <mat-option value="option1">Executive Office for United States' Attorneys 123456, Test Court O'One</mat-option>
+          <mat-option value="option2">Option 2</mat-option>
+          <mat-option value="option3">Option 3</mat-option>
+        </mat-select>
+      </mat-form-field>
+      
+      <!-- <p>You selected: {{selected}}</p> -->
+    
+    </mat-toolbar-row>
+
+
+     
+    </mat-toolbar>
+  </p>
+  

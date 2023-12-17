@@ -1,0 +1,16 @@
+
+.row {
+    position:relative;
+    width: 100%;
+    background: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 25px;
+    
+}
+#col{
+    margin-left: 200px;
+    border-left: 2px solid yellow;
+   
+}

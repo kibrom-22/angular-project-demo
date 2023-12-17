@@ -1,0 +1,72 @@
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-3" >
+            <h2>District:</h2>
+            <p>Executive Office for United States' Attorneys 12345</p>
+            
+            <h2>Room:</h2>
+            <p>Test Court {{selected}}</p>
+            <mat-form-field>
+                <mat-select [(value)]="selected">
+                  <mat-option value="O'One">O'One</mat-option>
+                  <mat-option value="O'Two">O'Two</mat-option>
+                </mat-select>
+              </mat-form-field>
+            
+              <h2>Grand Jury Calander Date(s):</h2>
+            
+              <mat-form-field>
+                <mat-label>Enter a date range</mat-label>
+                <mat-date-range-input [rangePicker]="picker">
+                  <input matStartDate placeholder="Start date">
+                  <input matEndDate placeholder="End date">
+                </mat-date-range-input>
+                <mat-hint>MM/DD/YYYY – MM/DD/YYYY</mat-hint>
+                <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+                <mat-date-range-picker #picker></mat-date-range-picker>
+              </mat-form-field>
+            
+        </div>
+        <div class="w-100"></div>
+        <div class="col-sm-3" id="col">
+            <h2>District:</h2>
+            <p>Executive Office for United States' Attorneys 12345</p>
+            
+            <h2>Room:</h2>
+            <p>Test Court {{selected}}</p>
+            <mat-form-field>
+                <mat-select [(value)]="selected">
+                  <mat-option value="O'One">O'One</mat-option>
+                  <mat-option value="O'Two">O'Two</mat-option>
+                </mat-select>
+              </mat-form-field>
+            
+              <h2>Grand Jury Calander Date(s):</h2>
+            
+              <mat-form-field>
+                <mat-label>Enter a date range</mat-label>
+                <mat-date-range-input [rangePicker]="picker">
+                  <input matStartDate placeholder="Start date">
+                  <input matEndDate placeholder="End date">
+                </mat-date-range-input>
+                <mat-hint>MM/DD/YYYY – MM/DD/YYYY</mat-hint>
+                <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+                <mat-date-range-picker #picker></mat-date-range-picker>
+              </mat-form-field>
+            
+            
+              
+              
+            
+       
+    
+      
+    
+    
+        </div>
+
+    </div>
+</div>
+
+       
